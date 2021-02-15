@@ -1,0 +1,92 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        color: purple;
+    }
+    
+    .header {
+        border: 0.2em solid green;
+        margin: 0.2em 0em;
+        padding: 0.2em;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .button {
+        flex-basis: 20%;
+        align-self: flex-end;
+        display: none;
+    }
+    
+    .logo {
+        height: 100%;
+        display: block;
+        background-color: yellow;
+        font-weight: bold;
+        flex-basis: 15%;
+        font-size: 2rem;
+    }
+    
+    .nav {
+        flex-basis: 60%;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0.1em;
+        padding: 0.1em;
+    }
+    
+    li {
+        background-color: orange;
+        display: inline;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .text {
+        font-size: 2.5rem;
+        display: flex;
+    }
+    
+    .text-block {
+        border: 0.1em solid purple;
+        margin: 0.3em;
+        padding: 0.3em;
+        min-height: 250px;
+        flex-basis: 50%;
+        font-size: 1rem;
+    }
+    
+    @media screen and (max-width: 650px) {
+        .header {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .text {
+            flex-wrap: wrap;
+        }
+        .text-block {
+            flex-basis: 100%;
+        }
+        .button {
+            display: block;
+        }
+        .nav {
+            flex-basis: 100%;
+            display: none;
+        }
+        li {
+            display: block;
+        }
+    }
+    
+    .show {
+        display: block;
+    }
